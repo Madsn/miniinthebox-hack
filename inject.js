@@ -16,8 +16,10 @@ var hulkTheButton = function(){
   var newForm = document.createElement('div');
   newForm.innerHTML = '<input type="submit" value="Buy Now" class="btn btn-success litb-icon-buy-now">';
   newForm.className="order-actions";
-  var productId=638761;
-  var ruleId=39456;
+  var productId=544283;
+  var ruleId=39458; // 3-led white li.. (58th hour)
+  // var ruleId=39456; // 1280x960 5 mil.. (57th hour)
+  // var ruleId=39453; //envelop style ... (56th hour)
   var data_json = '{"url":"http:\\/\\/www.miniinthebox.com\\/index.php?main_page=info_check&action=super_sale_join","url1":"http:\\/\\/www.miniinthebox.com\\/index.php?main_page=info_check&action=super_sale_winner","data":{"products_id":"{0}","ruleid":{1}}}'.format(productId, ruleId);
   newForm.setAttribute("data-json", data_json);
   var addToCartForm = document.getElementsByClassName('order-actions')[0];
